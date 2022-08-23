@@ -33,7 +33,7 @@ h1.title {
     
 }
 
-.challenge-list > div {
+.challenge-list > a {
     background-color: #1f2036;
     padding: 0em 1em;
     border-radius: 10px;
@@ -42,16 +42,18 @@ h1.title {
     display: flex;
     align-items: center;
     gap: 1em;
+    text-decoration: none;
+    color: white;
 }
 
-.challenge-list > div > small {
+.challenge-list > a > small {
     border: 1px solid #97c2f0;
     padding: 3px 5px;
     font-weight: bold;
     border-radius: 5px;
 }
 
-.challenge-list > div > small.solved {
+.challenge-list > a > small.solved {
     border: 1px solid #56ae6e;
     background-color: #148b50;
     padding: 3px 5px;

@@ -49,6 +49,8 @@ if (isset($_GET['reset'])) {
 
 <body>
     <h1 class="title">SpoonsCTF</h1>
+    <small>Click a challenge to download its task</small>
+    <br>
     <div class="box">
         <h1>Challenges</h1>
 
@@ -59,12 +61,12 @@ if (isset($_GET['reset'])) {
 
             foreach ($json->challenges as $c) :
             ?>
-                <div style="border-color: <?php echo '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6); ?>;">
+                <a href="<?php echo $c->path ?>" style="border-color: <?php echo '#' . substr(str_shuffle('ABCDEF0123456789'), 0, 6); ?>;">
                     <p><?php echo $c->name ?></p>
                     <?php if ($c->complete) : ?>
                         <small class="solved">solved</small>
                     <?php endif; ?>
-                </div>
+                </a>
             <?php
             endforeach;
             ?>
