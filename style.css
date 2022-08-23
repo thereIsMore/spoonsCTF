@@ -1,0 +1,44 @@
+
+body {
+    all: unset;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.button {
+    all: unset;
+
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.spoon {
+    background: url('./w_spoon.jpg') ;
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+}
+
+.spoon-text {
+    font-size: 20px;
+}
+
+.centerd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

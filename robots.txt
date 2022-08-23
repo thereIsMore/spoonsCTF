@@ -1,0 +1,7 @@
+# www.robotstxt.org/
+
+# Allow crawling of all content
+User-agent: *
+Disallow: /reallyImportantStuff/
+Disallow: /reallyImportantStuff/secrets/
+Disallow: /reallyImportantStuff/secrets/flag.html

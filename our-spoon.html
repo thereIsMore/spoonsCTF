@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Spoon</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div
+      style="
+        background: url('./wetherspoon-logo.png');
+        width: 100vw;
+        height: 40vh;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+      "
+    ></div>
+    <div class="centerd" id="d" v="TVRnPQ==">
+      <p style="max-width: 60%; text-align: center">
+        A tale as old as time, a tale of spoons.
+        <br />
+        <br />
+        <strong>But</strong> I like spoons, <strong>how</strong> could I ever
+        not love spoons, some would say to <strong>many</strong> spoons is to
+        many <strong>spoons</strong>. I'd like to say I like to spoon but
+        <strong>were</strong> I a spoon maybe I would not.
+        <strong>On</strong> another day maybe i'd be a fork, again
+        <strong>the</strong> spoon is far superior. <strong>previous</strong>ly
+        spoons rules the world, with an iron fist and a <strong>page</strong> of
+        forks to be jailed!
+      </p>
+      <br />
+      <br />
+      <br />
+      <input type="number" name="" placeholder="spoons?" id="s" />
+      <br />
+      <button id="spon" class="button">Subspoon</button>
+    </div>
+    <script>
+      function spooner() {
+        document.getElementById("spon").addEventListener("click", function (e) {
+          let v = document.getElementById("s").value;
+          if (
+            parseInt(v) ===
+            parseInt(atob(atob(document.getElementById("d").getAttribute("v"))))
+          ) {
+            alert("Click spoons*spoons/46 spoons");
+            history.back();
+          }
+        });
+      }
+      window.onload = spooner();
+    </script>
+  </body>
+</html>
